@@ -466,6 +466,7 @@ section .login:nth-child(3)
 }
 
 
+
 .forget a{
     color: #fff;
     font-weight:700;
@@ -481,6 +482,22 @@ section .login:nth-child(3)
     cursor: pointer;
     text-transform: uppercase;
 }
+
+.btn:hover{
+    letter-spacing: 5px;
+}
+
+.emailfont{
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.inputBox1 input[type="submit"]{
+    font-family: 'Silkscreen', cursive;
+}
+
+.inputBox1 input[type="email"] .value{
+    font-family: 'Silkscreen', cursive;
+}
 #popup{
 
     position: fixed;
@@ -494,6 +511,11 @@ section .login:nth-child(3)
     box-shadow:0 15px 30px rgba(0,0,0,0.08);
     transition: 0.5s;
     visibility: hidden;
+    border-radius: 35px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+
 }
 
 #popup.active{
@@ -511,6 +533,7 @@ section .login:nth-child(3)
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 #popup .content img {
@@ -565,8 +588,8 @@ section .login:nth-child(3)
 
 .close{
     position: absolute;
-    top: 20px;
-    right: 60px;
+    top: 30px;
+    right: 70px;
     cursor: pointer;
     height: 300px;
     width: 100px;
@@ -575,3 +598,4 @@ section .login:nth-child(3)
 
 
 }
+
