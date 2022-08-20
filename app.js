@@ -40,7 +40,6 @@ console.log(chatShop.checkCost(3));
 function popupToggle(){
     const popup = document.getElementById('popup');
     popup.classList.toggle('acitve')
-
 }
 
 
