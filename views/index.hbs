@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>CHATTIX</title>
     <script src="/app.js"></script>
+    <script src="function.js"></script>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -24,11 +25,19 @@
             <div id="s3" class="s3"><span class="con"> Shop</span></div>
         </a>
 
-        <a class="acontact" onclick="popupToggle();">
+        <a class="btn" onclick="popupToggle();">
             <div id="s4" class="s4"><span class="con"> Contact</span></div>
         </a>
 
-        <div id="popup">
+        <div id="chatContener" class= "third">
+
+            <h2>...</h2>
+            <img class="pre" alt="loading image..." src="pre.png">
+        </div>
+    </div>
+
+
+    <div id="popup">
         <div class="content">
             <img src="notebook.gif" alt="loading...">
             <h2>Contact with us!</h2>
@@ -37,17 +46,11 @@
                 <input type="email" placeholder="E-mail">
             </div>
             <div class="inputBox1">
-                <input type="submit" value="Sign Up" class="acontact">
+                <input type="submit" value="Sign Up" class="btn">
             </div>
-            <a class="close" onclick="popupToggle();"><img src="close.png"></a>
-        </div>
         </div>
 
-        <div id="chatContener" class= "third">
-
-            <h2>...</h2>
-            <img alt="loading image..." src="pre.png">
-        </div>
+        <a class="close" onclick="popupToggle();"><img src="close.png"></a>
     </div>
 
 </body>

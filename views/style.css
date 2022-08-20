@@ -10,6 +10,8 @@ h1,h2,h3,h4{
 
 *{
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 
 body {
@@ -17,6 +19,9 @@ body {
     background-color: #9795EF;
     margin:0;
     padding:0;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
@@ -30,6 +35,13 @@ img{
     box-shadow: 0 0 10px rgba(0,0,0,0.7);
     padding:1rem;
     margin: 2rem 2rem 2rem 19rem;
+}
+
+.pre{
+    position: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 3rem;
 
 
 }
@@ -51,8 +63,12 @@ img{
 }
 
 .third{
-
-
+    text-align: center;
+    margin:0;
+    padding: 0;
+    position: center;
+    align-items: center;
+    align-content: center;
 }
 
 .s1{
@@ -135,11 +151,11 @@ img{
     color:white;
 }
 
-.acontact,.anon,.shop {
+.btn,.anon,.shop {
     position: relative;
 }
 
-.acontact span.con{
+.btn span.con{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -148,7 +164,7 @@ img{
     background: maroon;
 }
 
-.acontact span.con:nth-child(1){
+.btn span.con:nth-child(1){
 
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0 50%);
     overflow: hidden;
@@ -166,7 +182,7 @@ img{
 
 }
 
-.acontact span.con:nth-child(1):hover{
+.btn span.con:nth-child(1):hover{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     letter-spacing: 5px;
@@ -359,6 +375,12 @@ section .login:nth-child(3)
     align-items: center;
 }
 
+.all#mainContener.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
 .container{
 
     position: relative;
@@ -451,17 +473,25 @@ section .login:nth-child(3)
 
 /* contact script */
 
+
+.btn{
+
+    position:relative;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
 #popup{
 
     position: fixed;
-    top: 50%;
+    top: -100%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
     background: #fff;
     width: 450px;
     padding: 80px 50px 50px;
-    box-shadow:0 15px 30px rgba(0,0,0,0.8);
+    box-shadow:0 15px 30px rgba(0,0,0,0.08);
     transition: 0.5s;
     visibility: hidden;
 }
@@ -469,6 +499,8 @@ section .login:nth-child(3)
 #popup.active{
     visibility: visible;
     top: 50%;
+    opacity:1;
+    transition: 0.5s;
 }
 
 #popup .content{
@@ -523,17 +555,23 @@ section .login:nth-child(3)
 
 }
 
-#popup .content .inputBox input [type="submit"]{
+#popup .content .inputBox input[type="submit"]{
 
-     max-width: 150px;
-    background: #9795EF;
+    max-width: 130px;
+    background: tomato;
     color: #fff;
     border:none;
 }
 
 .close{
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 20px;
+    right: 60px;
     cursor: pointer;
+    height: 300px;
+    width: 100px;
+    margin-right: 13rem;
+    margin-top: -3rem;
+
+
 }
