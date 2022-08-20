@@ -1,12 +1,10 @@
-//funkcja aktywujaca okienko
+//funkcja aktywujaca okienko i blurujaca background
 function popupToggle(){
     const popup = document.getElementById('popup');
     popup.classList.toggle('active');
     var blur = document.getElementById('mainContener')
     blur.classList.toggle('active')
 }
-
-//funkcja blurujaca background
 
 
 
