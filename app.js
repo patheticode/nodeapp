@@ -30,12 +30,12 @@ const createuser = async (data) => {
     }
 }
 
-createuser({
-    name: "pathetic",
+/*createuser({
+    name: "Wojtek",
     age: 19
-})
+})*/
 
-/*findUsers()*/
+findUsers()
 
 //mongodb bez mongoose
 
