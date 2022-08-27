@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CHATTIX</title>
-    <script src="/app.js"></script>
-    <script src="function.js"></script>
+    <script src="function.js" defer></script>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -33,6 +32,7 @@
 
             <h2>...</h2>
             <img class="pre" alt="loading image..." src="pre.png">
+
         </div>
 
 
@@ -45,13 +45,12 @@
             <h2>Contact with us!</h2>
             <p>Enter your e-mail below and we will give you feedback.</p>
             <div class="inputBox1">
-                <input type="email" placeholder="E-mail" class="emailfont">
+                <input type="email" placeholder="E-mail" class="emailfont" id="emailClear">
             </div>
             <div class="inputBox1">
-                <input type="submit" value="Sign Up" class="btn">
+                <input type="submit" value="Sign Up" class="btn" id="btnClear">
             </div>
         </div>
-
         <a class="close" onclick="popupToggle();"><img src="close.png" alt="loading..."></a>
     </div>
 

@@ -2,9 +2,26 @@
 function popupToggle(){
     const popup = document.getElementById('popup');
     popup.classList.toggle('active');
-    var blur = document.getElementById('mainContener')
+    let blur = document.getElementById('mainContener')
     blur.classList.toggle('active')
 }
+function handleClick(event)
+{
+    event.preventDefault();
+
+    const emailInput = document.getElementById('emailClear');
+
+    console.log(emailInput.value);
+
+    //clear input value
+
+    emailInput.value = '';
+}
+
+//setTimeout(function() {
+    var btnClear = document.getElementById('btnClear');
+    btnClear.addEventListener('click', handleClick);
+//}, 1000);
 
 
 
@@ -13,12 +30,12 @@ function popupToggle(){
 
 
 
-//do bazy mongodb lub postgresql
-var chatMain = {};
+
+let chatMain = {};
 
 chatMain.opcje = ['zaloguj', 'zarejestruj', 'chat', 'sklep', 'kontakt'];
 
-var chatShop =  {
+let chatShop =  {
 
     colors : ['purple', 'blackyellow'],
     emoji : true,
@@ -30,8 +47,9 @@ var chatShop =  {
     }
 }
 
-var kolor = chatShop.colors[0];
+let kolor = chatShop.colors[0];
 
 console.log(kolor);
 console.log(chatMain.opcje[3]);
 console.log(chatShop.checkCost(3));
+
